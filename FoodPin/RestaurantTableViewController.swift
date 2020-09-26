@@ -63,6 +63,21 @@ class RestaurantTableViewController: UITableViewController {
         return cell
     }
     
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        // create an option menu
+        let optionMenu = UIAlertController(title: nil, message: "What would you like to do?", preferredStyle: .alert)
+        
+        // add options to the menu
+        let cancelAction = UIAlertAction(title: "Cancel", style: .cancel, handler: nil)
+        
+        // add option to optionMenu
+        optionMenu.addAction(cancelAction)
+        
+        // show the menu
+        present(optionMenu, animated: true, completion: nil)
+        
+    }
+    
 
     /*
     // Override to support conditional editing of the table view.
