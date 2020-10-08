@@ -85,21 +85,21 @@ class RestaurantTableViewController: UITableViewController {
         
         let buttonTitle = self.restaurantIsVisited[indexPath.row] ? "Check out" : "Check in"
         
+        let imageView = UIImageView(frame: CGRect(x: 20, y: 20, width: 20, height: 20))
+        
+        imageView.image = UIImage(named: "heart-tick")
+        
         // sets the accessory type of the cell to checked
         let checkinAction = UIAlertAction(title: buttonTitle, style: .default, handler: {
             (action: UIAlertAction!) -> Void in
             let cell = tableView.cellForRow(at: indexPath)
+            cell?.accessoryType = self.restaurantIsVisited[indexPath.row] ? .none : .checkmark
             
-            if(self.restaurantIsVisited[indexPath.row]) {
-                cell?.accessoryView = nil
+            if self.restaurantIsVisited[indexPath.row] {
+                cell?.accessoryType = .none
                 self.restaurantIsVisited[indexPath.row] = false
             } else {
-
-                let imageView = UIImageView(frame: CGRect(x: 20, y: 20, width: 20, height: 20))
-                
-                imageView.image = UIImage(named: "heart-tick")
-                
-                cell?.accessoryView = imageView
+                cell?.accessoryType = .checkmark
                 self.restaurantIsVisited[indexPath.row] = true
             }
         })
