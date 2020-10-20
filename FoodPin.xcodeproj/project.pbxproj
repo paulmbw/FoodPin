@@ -10,6 +10,12 @@
 		9D641350253CCA0A003FE440 /* Restaurant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D64134F253CCA0A003FE440 /* Restaurant.swift */; };
 		9D807DF52534854600250C09 /* RestaurantDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D807DF42534854600250C09 /* RestaurantDetailViewController.swift */; };
 		9D91D5BA25194E8D009EBDE8 /* RestaurantTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D91D5B925194E8D009EBDE8 /* RestaurantTableViewController.swift */; };
+		9DAF7F28253F5F8500857A19 /* FugazOne-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9DAF7F22253F5F8500857A19 /* FugazOne-Regular.ttf */; };
+		9DAF7F29253F5F8500857A19 /* LibreBaskerville-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9DAF7F23253F5F8500857A19 /* LibreBaskerville-Bold.ttf */; };
+		9DAF7F2A253F5F8500857A19 /* KronaOne-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9DAF7F24253F5F8500857A19 /* KronaOne-Regular.ttf */; };
+		9DAF7F2B253F5F8500857A19 /* LibreBaskerville-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9DAF7F25253F5F8500857A19 /* LibreBaskerville-Regular.ttf */; };
+		9DAF7F2C253F5F8500857A19 /* LibreBaskerville-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9DAF7F26253F5F8500857A19 /* LibreBaskerville-Italic.ttf */; };
+		9DAF7F2D253F5F8500857A19 /* Lobster-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9DAF7F27253F5F8500857A19 /* Lobster-Regular.ttf */; };
 		9DFE2B95251927F400AD6A4F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DFE2B94251927F400AD6A4F /* AppDelegate.swift */; };
 		9DFE2B97251927F400AD6A4F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DFE2B96251927F400AD6A4F /* SceneDelegate.swift */; };
 		9DFE2B9C251927F400AD6A4F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9DFE2B9A251927F400AD6A4F /* Main.storyboard */; };
@@ -22,6 +28,12 @@
 		9D64134F253CCA0A003FE440 /* Restaurant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Restaurant.swift; sourceTree = "<group>"; };
 		9D807DF42534854600250C09 /* RestaurantDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantDetailViewController.swift; sourceTree = "<group>"; };
 		9D91D5B925194E8D009EBDE8 /* RestaurantTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantTableViewController.swift; sourceTree = "<group>"; };
+		9DAF7F22253F5F8500857A19 /* FugazOne-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "FugazOne-Regular.ttf"; sourceTree = "<group>"; };
+		9DAF7F23253F5F8500857A19 /* LibreBaskerville-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "LibreBaskerville-Bold.ttf"; sourceTree = "<group>"; };
+		9DAF7F24253F5F8500857A19 /* KronaOne-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "KronaOne-Regular.ttf"; sourceTree = "<group>"; };
+		9DAF7F25253F5F8500857A19 /* LibreBaskerville-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "LibreBaskerville-Regular.ttf"; sourceTree = "<group>"; };
+		9DAF7F26253F5F8500857A19 /* LibreBaskerville-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "LibreBaskerville-Italic.ttf"; sourceTree = "<group>"; };
+		9DAF7F27253F5F8500857A19 /* Lobster-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lobster-Regular.ttf"; sourceTree = "<group>"; };
 		9DFE2B91251927F400AD6A4F /* FoodPin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FoodPin.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9DFE2B94251927F400AD6A4F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9DFE2B96251927F400AD6A4F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -77,6 +89,27 @@
 			path = Storyboard;
 			sourceTree = "<group>";
 		};
+		9DAF7F16253F5D0C00857A19 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				9DAF7F17253F5D1800857A19 /* Fonts */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		9DAF7F17253F5D1800857A19 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				9DAF7F22253F5F8500857A19 /* FugazOne-Regular.ttf */,
+				9DAF7F24253F5F8500857A19 /* KronaOne-Regular.ttf */,
+				9DAF7F23253F5F8500857A19 /* LibreBaskerville-Bold.ttf */,
+				9DAF7F26253F5F8500857A19 /* LibreBaskerville-Italic.ttf */,
+				9DAF7F25253F5F8500857A19 /* LibreBaskerville-Regular.ttf */,
+				9DAF7F27253F5F8500857A19 /* Lobster-Regular.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
 		9DFE2B88251927F400AD6A4F = {
 			isa = PBXGroup;
 			children = (
@@ -96,6 +129,7 @@
 		9DFE2B93251927F400AD6A4F /* FoodPin */ = {
 			isa = PBXGroup;
 			children = (
+				9DAF7F16253F5D0C00857A19 /* Resources */,
 				9D641355253E0B49003FE440 /* Storyboard */,
 				9D641354253E0B2D003FE440 /* Model */,
 				9D641353253E0B28003FE440 /* View */,
@@ -167,8 +201,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				9DFE2BA1251927F500AD6A4F /* LaunchScreen.storyboard in Resources */,
+				9DAF7F2B253F5F8500857A19 /* LibreBaskerville-Regular.ttf in Resources */,
 				9DFE2B9E251927F500AD6A4F /* Assets.xcassets in Resources */,
+				9DAF7F28253F5F8500857A19 /* FugazOne-Regular.ttf in Resources */,
+				9DAF7F2C253F5F8500857A19 /* LibreBaskerville-Italic.ttf in Resources */,
 				9DFE2B9C251927F400AD6A4F /* Main.storyboard in Resources */,
+				9DAF7F2A253F5F8500857A19 /* KronaOne-Regular.ttf in Resources */,
+				9DAF7F2D253F5F8500857A19 /* Lobster-Regular.ttf in Resources */,
+				9DAF7F29253F5F8500857A19 /* LibreBaskerville-Bold.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
