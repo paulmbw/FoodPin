@@ -114,11 +114,11 @@
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                <view key="tableHeaderView" contentMode="scaleToFill" id="V0r-8W-oKW" userLabel="Header View">
+                                <view key="tableHeaderView" contentMode="scaleToFill" id="V0r-8W-oKW" userLabel="Header View" customClass="RestaurantDetailHeaderView" customModule="FoodPin" customModuleProvider="target">
                                     <rect key="frame" x="0.0" y="0.0" width="414" height="350"/>
                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     <subviews>
-                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="jeF-LI-ytk" userLabel="Header Image View">
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="jeF-LI-ytk" userLabel="Header Image View">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="350"/>
                                         </imageView>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tcn-tD-YLh" userLabel="Restaurant Name Label">
@@ -160,6 +160,12 @@
                                         <constraint firstItem="n0z-yN-euc" firstAttribute="top" secondItem="Tcn-tD-YLh" secondAttribute="bottom" constant="3" id="jmS-4p-RMp"/>
                                         <constraint firstAttribute="bottom" secondItem="n0z-yN-euc" secondAttribute="bottom" constant="14" id="skO-g5-qEH"/>
                                     </constraints>
+                                    <connections>
+                                        <outlet property="headerImageView" destination="jeF-LI-ytk" id="dVn-L0-hvJ"/>
+                                        <outlet property="heartImageView" destination="xhA-bL-aQV" id="Tf1-Sn-bpx"/>
+                                        <outlet property="nameLabel" destination="Tcn-tD-YLh" id="nFq-WP-PB6"/>
+                                        <outlet property="typeLabel" destination="n0z-yN-euc" id="KBu-4q-n4m"/>
+                                    </connections>
                                 </view>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="ODs-Jd-CSY">
@@ -185,6 +191,10 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <navigationItem key="navigationItem" id="f2K-4M-4bj"/>
+                    <connections>
+                        <outlet property="headerView" destination="V0r-8W-oKW" id="kpC-oR-KVt"/>
+                        <outlet property="tableView" destination="i2L-Vy-QbK" id="yDT-sc-u7m"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kyt-Ig-Elk" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
