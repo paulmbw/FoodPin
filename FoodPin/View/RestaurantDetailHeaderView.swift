@@ -27,6 +27,7 @@ class RestaurantDetailHeaderView: UIView {
             nameLabel.numberOfLines = 0
         }
     }
+    
     @IBOutlet var typeLabel: UILabel! {
         didSet {
             // both of these properties are important as they set the corner radius of the type label
@@ -34,6 +35,7 @@ class RestaurantDetailHeaderView: UIView {
             typeLabel.layer.masksToBounds = true
         }
     }
+    
     @IBOutlet var heartImageView: UIImageView! {
         didSet {
             heartImageView.image = UIImage(named: "heart-tick")?.withRenderingMode(.alwaysTemplate)

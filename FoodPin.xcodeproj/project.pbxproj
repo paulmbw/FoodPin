@@ -10,6 +10,8 @@
 		9D641350253CCA0A003FE440 /* Restaurant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D64134F253CCA0A003FE440 /* Restaurant.swift */; };
 		9D807DF52534854600250C09 /* RestaurantDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D807DF42534854600250C09 /* RestaurantDetailViewController.swift */; };
 		9D91D5BA25194E8D009EBDE8 /* RestaurantTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D91D5B925194E8D009EBDE8 /* RestaurantTableViewController.swift */; };
+		9DA0E44F2540EA8500874391 /* RestaurantDetailIconTextCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DA0E44E2540EA8500874391 /* RestaurantDetailIconTextCell.swift */; };
+		9DA0E4522540ED2100874391 /* RestaurantDetailTextCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DA0E4512540ED2100874391 /* RestaurantDetailTextCell.swift */; };
 		9DAF7F28253F5F8500857A19 /* FugazOne-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9DAF7F22253F5F8500857A19 /* FugazOne-Regular.ttf */; };
 		9DAF7F29253F5F8500857A19 /* LibreBaskerville-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9DAF7F23253F5F8500857A19 /* LibreBaskerville-Bold.ttf */; };
 		9DAF7F2A253F5F8500857A19 /* KronaOne-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9DAF7F24253F5F8500857A19 /* KronaOne-Regular.ttf */; };
@@ -29,6 +31,8 @@
 		9D64134F253CCA0A003FE440 /* Restaurant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Restaurant.swift; sourceTree = "<group>"; };
 		9D807DF42534854600250C09 /* RestaurantDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantDetailViewController.swift; sourceTree = "<group>"; };
 		9D91D5B925194E8D009EBDE8 /* RestaurantTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantTableViewController.swift; sourceTree = "<group>"; };
+		9DA0E44E2540EA8500874391 /* RestaurantDetailIconTextCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantDetailIconTextCell.swift; sourceTree = "<group>"; };
+		9DA0E4512540ED2100874391 /* RestaurantDetailTextCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantDetailTextCell.swift; sourceTree = "<group>"; };
 		9DAF7F22253F5F8500857A19 /* FugazOne-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "FugazOne-Regular.ttf"; sourceTree = "<group>"; };
 		9DAF7F23253F5F8500857A19 /* LibreBaskerville-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "LibreBaskerville-Bold.ttf"; sourceTree = "<group>"; };
 		9DAF7F24253F5F8500857A19 /* KronaOne-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "KronaOne-Regular.ttf"; sourceTree = "<group>"; };
@@ -71,6 +75,8 @@
 			children = (
 				9DFF5165251A8D6A00B33D94 /* RestaurantTableViewCell.swift */,
 				9DAF7F3325404D0300857A19 /* RestaurantDetailHeaderView.swift */,
+				9DA0E44E2540EA8500874391 /* RestaurantDetailIconTextCell.swift */,
+				9DA0E4512540ED2100874391 /* RestaurantDetailTextCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -223,8 +229,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				9DFF5166251A8D6A00B33D94 /* RestaurantTableViewCell.swift in Sources */,
+				9DA0E4522540ED2100874391 /* RestaurantDetailTextCell.swift in Sources */,
 				9DFE2B95251927F400AD6A4F /* AppDelegate.swift in Sources */,
 				9D641350253CCA0A003FE440 /* Restaurant.swift in Sources */,
+				9DA0E44F2540EA8500874391 /* RestaurantDetailIconTextCell.swift in Sources */,
 				9DAF7F3425404D0300857A19 /* RestaurantDetailHeaderView.swift in Sources */,
 				9D807DF52534854600250C09 /* RestaurantDetailViewController.swift in Sources */,
 				9DFE2B97251927F400AD6A4F /* SceneDelegate.swift in Sources */,
