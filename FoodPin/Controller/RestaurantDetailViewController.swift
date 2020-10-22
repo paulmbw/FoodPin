@@ -11,8 +11,8 @@ import UIKit
 // MARK: This is the Detail view of the controller
 
 class RestaurantDetailViewController: UIViewController {
-    @IBOutlet var tableView: UITableView!
     @IBOutlet var headerView: RestaurantDetailHeaderView!
+    @IBOutlet var tableView: UITableView!
     
     var restaurant = Restaurant()
 
