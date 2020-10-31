@@ -69,7 +69,9 @@ class RestaurantDetailViewController: UIViewController, UITableViewDataSource, U
         
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // we're returning three because the view has a image header, and the two prototype cells
-        return 3
+        // this has changed from three to five becase we have the image header, the two prototype cells, and the two new cells for the
+        // "map text" and the map
+        return 5
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -91,6 +93,18 @@ class RestaurantDetailViewController: UIViewController, UITableViewDataSource, U
         case 2:
             let cell = tableView.dequeueReusableCell(withIdentifier: String(describing: RestaurantDetailTextCell.self), for: indexPath) as! RestaurantDetailTextCell
             cell.descriptionLabel.text = restaurant.description
+            cell.selectionStyle = .none
+            return cell
+            
+        case 3:
+            let cell = tableView.dequeueReusableCell(withIdentifier: String(describing: RestaurantDetailSeparatorCell.self), for: indexPath) as! RestaurantDetailSeparatorCell
+            cell.titleLabel.text = "Where to find us"
+            cell.selectionStyle = .none
+            
+            return cell
+            
+        case 4:
+            let cell = tableView.dequeueReusableCell(withIdentifier: String(describing: RestaurantDetailMapCell.self), for: indexPath) as! RestaurantDetailMapCell
             cell.selectionStyle = .none
             return cell
         default:

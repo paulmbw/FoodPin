@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		9D2D3E1E254B77D20031D3EE /* UIColourExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D2D3E1D254B77D20031D3EE /* UIColourExtension.swift */; };
 		9D641350253CCA0A003FE440 /* Restaurant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D64134F253CCA0A003FE440 /* Restaurant.swift */; };
+		9D6B85ED254D9915006F420A /* RestaurantDetailSeparatorCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D6B85EC254D9915006F420A /* RestaurantDetailSeparatorCell.swift */; };
+		9D6B85F0254D9A3F006F420A /* RestaurantDetailMapCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D6B85EF254D9A3F006F420A /* RestaurantDetailMapCell.swift */; };
 		9D807DF52534854600250C09 /* RestaurantDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D807DF42534854600250C09 /* RestaurantDetailViewController.swift */; };
 		9D91D5BA25194E8D009EBDE8 /* RestaurantTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D91D5B925194E8D009EBDE8 /* RestaurantTableViewController.swift */; };
 		9DAF7F28253F5F8500857A19 /* FugazOne-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9DAF7F22253F5F8500857A19 /* FugazOne-Regular.ttf */; };
@@ -31,6 +33,8 @@
 /* Begin PBXFileReference section */
 		9D2D3E1D254B77D20031D3EE /* UIColourExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColourExtension.swift; sourceTree = "<group>"; };
 		9D64134F253CCA0A003FE440 /* Restaurant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Restaurant.swift; sourceTree = "<group>"; };
+		9D6B85EC254D9915006F420A /* RestaurantDetailSeparatorCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantDetailSeparatorCell.swift; sourceTree = "<group>"; };
+		9D6B85EF254D9A3F006F420A /* RestaurantDetailMapCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantDetailMapCell.swift; sourceTree = "<group>"; };
 		9D807DF42534854600250C09 /* RestaurantDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantDetailViewController.swift; sourceTree = "<group>"; };
 		9D91D5B925194E8D009EBDE8 /* RestaurantTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantTableViewController.swift; sourceTree = "<group>"; };
 		9DAF7F22253F5F8500857A19 /* FugazOne-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "FugazOne-Regular.ttf"; sourceTree = "<group>"; };
@@ -87,6 +91,8 @@
 				9DAF7F3325404D0300857A19 /* RestaurantDetailHeaderView.swift */,
 				9DF9B61E2541FDDE00DBEA60 /* RestaurantDetailIconTextCell.swift */,
 				9DF9B6212541FF6500DBEA60 /* RestaurantDetailTextCell.swift */,
+				9D6B85EC254D9915006F420A /* RestaurantDetailSeparatorCell.swift */,
+				9D6B85EF254D9A3F006F420A /* RestaurantDetailMapCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -241,6 +247,7 @@
 			files = (
 				9DFF5166251A8D6A00B33D94 /* RestaurantTableViewCell.swift in Sources */,
 				9D2D3E1E254B77D20031D3EE /* UIColourExtension.swift in Sources */,
+				9D6B85F0254D9A3F006F420A /* RestaurantDetailMapCell.swift in Sources */,
 				9DF9B6222541FF6500DBEA60 /* RestaurantDetailTextCell.swift in Sources */,
 				9DFE2B95251927F400AD6A4F /* AppDelegate.swift in Sources */,
 				9D641350253CCA0A003FE440 /* Restaurant.swift in Sources */,
@@ -248,6 +255,7 @@
 				9DAF7F3425404D0300857A19 /* RestaurantDetailHeaderView.swift in Sources */,
 				9D807DF52534854600250C09 /* RestaurantDetailViewController.swift in Sources */,
 				9DFE2B97251927F400AD6A4F /* SceneDelegate.swift in Sources */,
+				9D6B85ED254D9915006F420A /* RestaurantDetailSeparatorCell.swift in Sources */,
 				9D91D5BA25194E8D009EBDE8 /* RestaurantTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
