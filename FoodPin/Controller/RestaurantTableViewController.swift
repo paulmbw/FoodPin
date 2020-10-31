@@ -42,6 +42,23 @@ class RestaurantTableViewController: UITableViewController {
         // the size is large, when scrolling down, the size decreases.
         navigationController?.navigationBar.prefersLargeTitles = true
         tableView.cellLayoutMarginsFollowReadableWidth = true
+        
+        // customizing the navigation bar
+        navigationController?.navigationBar.setBackgroundImage(UIImage(), for: .default)
+        navigationController?.navigationBar.shadowImage = UIImage()
+        
+        // NSAtrributedString
+        // A string with associated attributes (such as visual style, hyperlinks, or accessibility data) for portions of its text.
+        if let customFont = UIFont(name: "Lobster-Regular", size: 50.0) {
+            navigationController?.navigationBar.largeTitleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor(red: 231.0/255.0, green: 76.0/255.0, blue: 60.0/255.0, alpha: 1.0), NSAttributedString.Key.font: customFont]
+        }
+        
+        // this hides the bars when you swipe up
+        navigationController?.hidesBarsOnSwipe = true
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        navigationController?.navigationBar.barStyle = .default
     }
     
     // MARK: - Navigation
@@ -154,7 +171,7 @@ class RestaurantTableViewController: UITableViewController {
         })
         
         // setting the background color and image of the shareAction item
-        shareAction.backgroundColor = UIColor(red: 254.0/255.0, green: 149.0/255.0, blue: 38.0/255.0, alpha: 1.0)
+        shareAction.backgroundColor = UIColor(red: 254, green: 149, blue: 38)
         shareAction.image = UIImage(systemName: "square.and.arrow.up")
         
         // setting the background color and image of the deleteAction item

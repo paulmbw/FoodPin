@@ -11,6 +11,7 @@ import UIKit
 /**
  This class serves as the model for the cell. This class will connect to the interface builder.
  @IBOutlet are properties of classes, while IBAction are methods of classes.
+ This class represents the cell if the list of restaurants.
  */
 
 class RestaurantTableViewCell: UITableViewCell {

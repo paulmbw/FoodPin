@@ -102,7 +102,9 @@
                             <outlet property="delegate" destination="ilA-rD-u1R" id="Btc-HM-lBb"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Food Pin" id="rQj-de-pwo"/>
+                    <navigationItem key="navigationItem" title="Food Pin" id="rQj-de-pwo">
+                        <barButtonItem key="backBarButtonItem" title=" " id="XTu-9R-I3g"/>
+                    </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="N02-7B-6gx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -117,7 +119,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="8ea-TQ-gkh">
-                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
+                                <rect key="frame" x="0.0" y="-12" width="414" height="874"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <view key="tableHeaderView" contentMode="scaleToFill" id="G2C-ON-aU5" userLabel="Header View" customClass="RestaurantDetailHeaderView" customModule="FoodPin" customModuleProvider="target">
                                     <rect key="frame" x="0.0" y="0.0" width="414" height="350"/>
@@ -257,10 +259,12 @@
                             <constraint firstItem="mGr-Q3-aky" firstAttribute="trailing" secondItem="8ea-TQ-gkh" secondAttribute="trailing" id="Hpm-CW-dei"/>
                             <constraint firstItem="mGr-Q3-aky" firstAttribute="bottom" secondItem="8ea-TQ-gkh" secondAttribute="bottom" id="OO1-jN-cKb"/>
                             <constraint firstItem="8ea-TQ-gkh" firstAttribute="leading" secondItem="mGr-Q3-aky" secondAttribute="leading" id="mpg-Dc-DbO"/>
-                            <constraint firstItem="8ea-TQ-gkh" firstAttribute="top" secondItem="mGr-Q3-aky" secondAttribute="top" id="xrg-zo-wgo"/>
+                            <constraint firstItem="8ea-TQ-gkh" firstAttribute="top" secondItem="mGr-Q3-aky" secondAttribute="top" constant="-100" id="xrg-zo-wgo"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="f2K-4M-4bj"/>
+                    <navigationItem key="navigationItem" id="f2K-4M-4bj">
+                        <barButtonItem key="backBarButtonItem" title=" " id="079-JX-ibe"/>
+                    </navigationItem>
                     <connections>
                         <outlet property="headerView" destination="G2C-ON-aU5" id="9xi-t7-Oup"/>
                         <outlet property="tableView" destination="8ea-TQ-gkh" id="Emo-Lx-Z4F"/>

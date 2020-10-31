@@ -9,7 +9,9 @@
 import UIKit
 
 class RestaurantDetailHeaderView: UIView {
+    
     @IBOutlet var headerImageView: UIImageView!
+    
     @IBOutlet var nameLabel: UILabel! {
         // this is known as a property observer. Once the value of nameLabel changes, we set the property of
         // nameLabel.numberOfLines to 0. This is the preferred way of doing this, because nameLabel can be
