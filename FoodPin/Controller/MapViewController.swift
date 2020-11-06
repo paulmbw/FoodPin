@@ -10,7 +10,7 @@
 import UIKit
 import MapKit
 
-class MapViewController: UIViewController {
+class MapViewController: UIViewController, MKMapViewDelegate {
     
     @IBOutlet var mapView: MKMapView!
     
@@ -22,6 +22,8 @@ class MapViewController: UIViewController {
     }
 
     override func viewDidLoad() {
+        mapView.delegate = self
+        mapView.showsTraffic = true
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
@@ -57,6 +59,38 @@ class MapViewController: UIViewController {
                 }
             }
         })
+    }
+    /**
+     Whenever an annotation is needed for a map view, this method is called.
+     */
+    func mapView(_ mapView: MKMapView, viewFor annotation: MKAnnotation) -> MKAnnotationView? {
+        let identifier = "MyMarker"
+        
+        /**
+         There is the default user location annotation when you open maps. We check if the current annotation is this type,
+         we return nil as we want to use our own annotation
+         */
+        if annotation.isKind(of: MKUserLocation.self) {
+            return nil
+        }
+        
+        /**
+         For improved performance, we want to use an exisiting annotation view instread of creating one.When it is no longer used
+         e.g. when we navigate away from the annoration view, it fets cached
+         */
+        var annotationView: MKMarkerAnnotationView? = mapView.dequeueReusableAnnotationView(withIdentifier: identifier) as? MKMarkerAnnotationView
+        
+        /**
+         if, for example you are navigating to the map screen for the first time, we create the annotation view
+         */
+        if annotationView == nil {
+            annotationView = MKMarkerAnnotationView(annotation: annotation, reuseIdentifier: identifier)
+        }
+        
+        annotationView?.glyphText = "😋"
+        annotationView?.markerTintColor = UIColor.orange
+        
+        return annotationView
     }
     
 
